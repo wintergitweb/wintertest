@@ -11,11 +11,12 @@
 
 
 nav {
-    padding: 1rem;
+    padding: 30px;
     background-color: #0556a2;
     position: fixed;
     width: 100%;
-    background-color: transparent;
+    background-color: black;
+    z-index: 20;
 
     
 }
@@ -23,14 +24,13 @@ nav {
 .nav-con {
     display: flex;
     justify-content: space-between;
-    position: relative;  
+    position: relative;
+    
 }
 
-nav .black{
-    background: #000;
-    
-   
-}
+
+
+
 
 .menu {
     display: flex;
@@ -82,12 +82,12 @@ nav .black{
 .hero {
     position: relative;
     background:url(https://i.ytimg.com/vi/mHuSAi9RxCg/maxresdefault.jpg)no-repeat;
-    background-position: 0% 60%;
+    background-position: 0% 0%;
     background-size: cover;
     z-index: -1;
     box-shadow: inset 0 0 0 2000px rgba(47, 47, 47, 0.5);
     background-attachment: fixed;
-    height: 100vh;
+    height: 70vh;
 }
 
 
@@ -95,7 +95,7 @@ nav .black{
 
 .hero-con {
     display: flex;
-    padding-top: 25vh;
+    padding-top: 15vh;
     width: 100%;
 }
 
@@ -106,7 +106,7 @@ nav .black{
 
 
 .hero-info h3 {
-    font-size: 20px;
+    font-size: 30px;
     font-family: cursive;
     font-weight: 1000;
     color: #f0f0f0;
@@ -115,6 +115,7 @@ nav .black{
 .hero-info p {
     margin: 1rem 0;
     color: #f0f0f0;
+    font-size: 20px;
 }
 
 /* button st */
@@ -132,17 +133,42 @@ nav .black{
 /* button ed */
 
 .hero-img img {
-    width: 100%;
+    width: 120%;
     padding: 0rem;
     margin-top: 30px;
     border-radius: 20px;
-    box-shadow: 3px 3px 10px 3px #2c2c2c;
+    box-shadow: 3px 3px 10px 3px #1a1919;
+}
+
+ 
+.container {
+    width: 50%;
+    box-sizing: 20%;
+}
+
+.main-container {
+    padding-bottom: 14vh;
+    
+}
+
+.item img {
+    width: 100%;
+}
+ 
+.c-item {
+    height: 350px;
+}
+
+.c-img {
+    height: 100%;
+    object-fit: cover;
 }
 
 .blog-con {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     column-gap: 2rem;
+    padding-top: 5vh;
 }
 
 .blog-title {
@@ -152,6 +178,7 @@ nav .black{
 .blog-title h3 {
     font-family: cursive;
     font-size: 25px;
+    padding-top: 8rem;
 }
 
 .blog-item img {
@@ -165,6 +192,7 @@ nav .black{
     font-family: cursive;
     font-size: 19px;
     font-weight: 900;
+    padding-top: 4rem;
 }
 
 .blog-item p {
